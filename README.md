@@ -1,5 +1,4 @@
 # Donate4U
-//keep it at last
 ## ❤️ Thanks to our awesome contributors ✨✨
 <table>
   <tr>

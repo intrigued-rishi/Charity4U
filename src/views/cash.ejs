@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/cash.css">
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>DonateCash</title>
+  </head>
+  <body>
+    <!-- navbar common -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/pictures/logo.jpg" alt="" width="30" height="28" style="margin-top: 2%;" class="d-inline-block align-top">
+                Charity4U
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/user/all">Organizations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About us</a>
+              </li>
+            </ul>
+            <span class="nav-item logout-btn">
+                <a class="nav-link btn btn-danger" href="/api/user/logout">
+                    Log out
+                </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar common end -->
+
+    
+    <!-- donate form -->
+	
+
+	<div class="form-box">
+		<form action="/api/org/all/card/pay/<%= id %>" method="POST">
+			<h1 class="heading" >Donate</h1>
+	
+			<!-- name -->
+			<label for="username" class="form-label mt-5">Name</label>
+			<input type="text" name="name" placeholder="Name">
+			
+			<!-- ph no -->
+			<label for="usermail" class="form-label mt-5">Email</label>
+			<input type="email" name="email" placeholder="Email">
+			
+			<!-- Address -->
+			<label for="useramount" class="form-label mt-5">Amount</label>
+			<input type="text" name="amount" placeholder="Amount">
+
+			<!-- Item -->
+			<!-- <label for="useritem" class="form-label">Address</label>
+			<textarea name="useritem" style="height: 120px;" id="useritem" class="form-control" placeholder="What do you want to donate?" required></textarea> -->
+
+
+			<div id="card-element" class="bg-transparent text-white p-2 h-10 mb-4 mt-3"></div>
+			<div id="card-errors" role="alert"></div>
+		
+
+			<button type="submit" class="btn btn-lg btn-outline-success submit-btn">Submit</button>
+
+		  </form>
+
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+	</body>
+	<script src="https://js.stripe.com/v3/"></script>
+<script src="/js/cash.js"></script>
+
+</html>

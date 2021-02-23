@@ -1,0 +1,26 @@
+.logout-btn{
+    margin-left: auto;
+    margin-right: 0;
+}
+.submit-btn{
+    margin-top: 30px;
+}
+.heading{
+    text-align: center;
+    color: brown;
+}
+.form-box{
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px lightskyblue;
+    padding: 5%;
+    background-color: lavender;
+}
+body{
+    background-color: lightcyan;
+}

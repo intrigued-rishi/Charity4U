@@ -1,0 +1,26 @@
+body{
+    overflow-x: hidden;
+}
+.navbar-brand{
+    font-family: 'Fredoka One';
+}
+.content-box{
+    margin: 3%;
+    margin-bottom: 1%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 30px lightgray;
+    box-shadow: 0 0 30px lightgray;
+    padding: 25px;
+}
+.box-head{
+    font-family: 'Fredoka One';
+    background-color: rgba(211, 211, 211, 0.466);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.box-body{
+    font-size: 20px;
+}

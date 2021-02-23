@@ -1,0 +1,19 @@
+.heading{
+    color:  white;
+    text-align: center;
+}
+.login-box{
+    background-color: cadetblue;
+    margin: 5%;
+    padding: 6%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 8px lightgray;
+    color: white;
+    font-weight: 700;
+}
+.submit-btn{
+    margin-top: 30px;
+}
+body{
+    background-color: lemonchiffon;
+}

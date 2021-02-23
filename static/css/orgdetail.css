@@ -1,0 +1,49 @@
+.logout-btn{
+    margin-left: auto;
+    margin-right: 0;
+}
+.detail-box{
+    margin: 5%;
+}
+.cont-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img-org{
+    width: 100%;
+    border-radius: 15px;
+}
+.img-org:hover{
+    transform: scale(1.05);
+}
+.org-text{
+    padding:20px;
+}
+
+.donate{
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: crimson;
+}
+body{
+    background-color: cornsilk;
+}
+/* blinking effect...copy pasted */
+.blink_me {
+    animation: blinker 1s linear infinite;
+    text-align: center;
+    color: crimson;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

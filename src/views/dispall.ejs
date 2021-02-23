@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/org.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Organizations</title>
+  </head>
+  <body>
+    <!-- navbar common -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/pictures/logo.jpg" alt="" width="30" height="28" style="margin-top: 2%;" class="d-inline-block align-top">
+                Charity4U
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About us</a>
+                </li>
+            </ul>          
+          </div>
+        </div>
+      </nav>
+    <!-- navbar common end -->
+
+    <h1 class="heading" data-aos="zoom-in" data-aos-duration="3000">
+        Associated Organizations
+    </h1>  
+    <!-- organization cards -->
+    <div class="card-box">
+        <!-- a row -->
+        <div class="row">
+            <!-- a col -->
+            <% for(x of orgs){ %>
+              <div class="col-md-4" style="margin-top: 10px;">
+                  <!-- card -->
+                  <div class="card" data-aos="fade-right" data-aos-duration="3000" style=" justify-content: center; align-items: center;">
+                    <img src="<%= x.profile_pic_url %>" class="card-img-top" alt="..." style="height: 200px; width: 200px;">
+                    <div class="card-body" style="text-align: center;">
+                      <h5 class="card-title"><%= x.username %></h5>
+                      <p class="card-text"><%= x.about %></p>
+                      <a href="/api/org/dispall/contributions/<%= x.id %>" class="btn btn-primary">See Contributions</a>
+                    </div>
+                </div>
+              </div>
+              <% } %>
+        </div>
+    </div>
+    <button class="btn btn-danger" style="margin-left:50%; margin-right: 50%;" onclick="history.back()">Back</button>
+    
+    <!-- cards end -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+    </body>
+</html>

@@ -1,0 +1,39 @@
+.signup-btn{
+    margin-right: 40px;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.dropdown-item:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+.modal-title{
+    color: #dc3545;
+}
+#carouselExampleCaptions{
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+}
+#carouselExampleCaptions .carousel-inner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item img{
+    opacity: 0.75;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h1{
+    position: relative;
+    font-size: 50px;
+    color: black;
+}

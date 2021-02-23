@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/org.css">
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>AdminPanel</title>
+  </head>
+  <body>
+
+    <h1 class="heading" data-aos="zoom-in" data-aos-duration="3000">
+        Associated Organizations
+    </h1>  
+    <!-- organization cards -->
+    <div class="card-box">
+        <!-- a row -->
+        <div class="row">
+            <!-- a col -->
+            <% for(x of orgs){ %>
+            <div class="col-md-6" style="margin-top: 10px;">
+                <!-- card -->
+                <div class="card" style=" justify-content: center; align-items: center;">
+                    <a href="<%= x.ver_pic %>"><img src="<%= x.ver_pic %>" class="card-img-top" alt="..." style="height: 200px; width: 200px;"></a>
+                    <div class="card-body" style="text-align: center;">
+                      <h5 class="card-title"><%= x.username %></h5>
+                      <h5 class="card-title"><%= x.phone %></h5>
+                      <h5 class="card-title"><%= x.address %></h5>
+                      <h5 class="card-title">Verified: <%= x.we_check %></h5>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    
+    <!-- cards end -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+    </body>
+</html>

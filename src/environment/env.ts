@@ -7,7 +7,7 @@ export interface Environment{
 }
 
 export function getEnvironmentVariables() {
-    if(process.env.NODE_ENV=='organization'){     //previously it was  if(process.env.NODE_ENV=='token')
+    if(process.env.NODE_ENV=='organization'){     
         return OrgEnvironment
     }
     return DonatorEnvironment

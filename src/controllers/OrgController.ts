@@ -6,7 +6,7 @@ import {getEnvironmentVariables} from '../environment/env';
 const express = require('express');
 var cookies = require("cookie-parser");
 const app = express();
-const stripe = require('stripe')('sk_test_51I3vDkDQE1WEv9QIarayMYRTT8m58JGKJchAYKRGDjdHmrH8Hdfkezvj7r0SlfHo4TvleNow6tCvtpNHYOghDwqv00SsZkGN70'); // Secret key
+const stripe = require('stripe')('Your stripe secret key'); // Secret key
 const mongoose=require('mongoose')
 
 

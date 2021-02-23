@@ -1,9 +1,9 @@
 import {Environment} from "./env";
 
 export const DonatorEnvironment : Environment = {
-    db_url : 'mongodb+srv://mongodbuser:myuser@mongodb.2gpch.mongodb.net?retryWrites=true&w=majority',
+    db_url : 'mongo db url',
 
- //jwt_secret : 'token'
- jwt_secret: 'donator'
+
+ jwt_secret: ':)'
 
 };

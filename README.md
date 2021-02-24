@@ -12,8 +12,8 @@ Charity4U is a donation site to bridge the gap between the donor and various gov
 <table>
   <tr>
     <td>
-      <a href="https://github.com/intrigued-rishi/Donate4U/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=intrigued-rishi/Donate4U" />
+      <a href="https://github.com/intrigued-rishi/Charity4U/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=intrigued-rishi/Charity4U" />
       </a>
      </td>
   </tr>
